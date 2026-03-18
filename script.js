@@ -10,6 +10,14 @@ const productCards = document.querySelectorAll(".product-card");
 
 let isListening = false;
 
+// 📱 Mobile Menu Toggle
+function toggleMenu() {
+  const navContainer = document.getElementById("navContainer");
+  const menuToggle = document.getElementById("menuToggle");
+  navContainer.classList.toggle("active");
+  menuToggle.classList.toggle("active");
+}
+
 // Toggle Voice Listening
 function toggleVoice() {
   if (isListening) {

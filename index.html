@@ -14,14 +14,22 @@
 <nav>
   <div class="logo">ShopEasy</div>
   
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="collections.html">Collections</a></li>
-    <li><a href="contactus.html">Contact Us</a></li>
-    <li><a href="settings.html">Settings</a></li>
-  </ul>
+  <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-  <div class="nav-controls">
+  <div class="nav-container" id="navContainer">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-controls" id="navControls">
     <!-- Voice Search Button -->
     <button id="micBtn" class="nav-btn" onclick="toggleVoice()">
       <span class="icon">🎤</span>
@@ -42,7 +50,7 @@
     <!-- Speaker Button -->
     <button class="nav-btn" onclick="speakProducts()">
       <span class="icon">🔊</span>
-      <span>Listen List</span>
+      <span class="btn-text">Listen List</span>
     </button>
   </div>
 </nav>
